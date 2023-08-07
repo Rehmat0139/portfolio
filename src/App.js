@@ -40,7 +40,7 @@ function App() {
         value={{ totalPrice, setTotalPrice, bottle, setBottle }}
       >
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Home />} />
           <Route path="/portfolio/About" element={<AboutUs />} />
           <Route path="/portfolio/Project" element={<ProjectPage />} />
 
