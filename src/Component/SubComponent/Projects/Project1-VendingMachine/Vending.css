@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Main{
+    min-height: 100vh;
+    background: url(https://i.pinimg.com/originals/de/a2/4e/dea24e5169ce9121f59001d76b57ee88.gif);
+}
+
+.Machine{
+    background-color: white;
+    padding: 10px;
+    border-radius: 1rem;
+    border: solid 8px black;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+
+.order button{
+    margin-left: 130px;
+    width: 180px;
+    FONT-WEIGHT: bold;
+    border-radius: 10px;
+    border: 8px solid black;
+    line-height: 3;
+}
+
+.Drinkcard{
+    padding: 10px;
+    margin: 20px;
+}
+
+
+
