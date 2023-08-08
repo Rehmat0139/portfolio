@@ -5,13 +5,8 @@ const FloatingButton = () => {
   const socialMediaLinks = [
     {
       name: "Phone",
-      url: "tel:+91-7506000139", 
-      icon: "bi bi-telephone", 
-    },
-    {
-      name: "Facebook",
-      url: "https://www.facebook.com/rehmat.shaikh.399",
-      icon: "bi bi-facebook",
+      url: "tel:+91-7506000139",
+      icon: "bi bi-telephone",
     },
     {
       name: "Whatsapp",
@@ -33,6 +28,11 @@ const FloatingButton = () => {
       name: "Twitter",
       url: "https://twitter.com/Rehmatshaikh69/",
       icon: "bi bi-twitter",
+    },
+    {
+      name: "Facebook",
+      url: "https://www.facebook.com/rehmat.shaikh.399",
+      icon: "bi bi-facebook",
     },
   ];
 

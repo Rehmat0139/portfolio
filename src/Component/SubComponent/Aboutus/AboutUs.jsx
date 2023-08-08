@@ -5,7 +5,10 @@ import "./AboutUs.css";
 const AboutUs = () => {
   return (
     <>
-      <section className="container-fluid" style={{backgroundColor:'#e6ffff', height:'100vh'}}>
+      <section
+        className="container-fluid"
+        style={{ backgroundColor: "#e6ffff", height: "100vh" }}
+      >
         <section className="container d-flex flex-column justify-content-center align-items-center">
           <div className="col-md-12">
             <h1 style={{ fontWeight: 600, margin: 10 }}>Skills</h1>

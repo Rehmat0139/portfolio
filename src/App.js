@@ -21,12 +21,21 @@ import RollDice from "./Component/SubComponent/Projects/Project2-RollDice/RollDi
 // ------------------------Project3 Deck Card----------------------------
 import DeckMain from "./Component/SubComponent/Projects/Project3-DeckCard/DeckMain";
 import Deck from "./Component/SubComponent/Projects/Project3-DeckCard/Deck";
+
+// -----------------------Project4 Flip Coin ------------------------
 import CoinMain from "./Component/SubComponent/Projects/Project4-CoinFlip/CoinMain";
 import FlipCoin from "./Component/SubComponent/Projects/Project4-CoinFlip/FlipCoin";
+
+// -------------------------Project5 Daily TodoList------------------------
 import TodoMain from "./Component/SubComponent/Projects/Project5-DailyTodo/TodoMain";
 import TodoList from "./Component/SubComponent/Projects/Project5-DailyTodo/TodoList";
+
+// -----------------------------Project6 Pokemon --------------------------------
 import PokemonMain from "./Component/SubComponent/Projects/Project6-Pokemon/PokemonMain";
 import Pokegame from "./Component/SubComponent/Projects/Project6-Pokemon/Pokegame";
+
+
+
 
 const AppContext = createContext(null);
 
@@ -130,6 +139,7 @@ function App() {
             element={<Pokegame />}
           />
           
+
         </Routes>
       </AppContext.Provider>
     </div>

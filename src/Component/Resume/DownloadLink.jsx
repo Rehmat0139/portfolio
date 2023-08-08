@@ -7,6 +7,9 @@ const DownloadLink = ({ myResume }) => {
     right: "20px",
     zIndex: "1000",
     fontWeight: "700",
+    boxShadow: '2px 5px 2px black'
+    // border:'3px solid red',
+    // color:' white'
   };
 
   const downloadImage = () => {
@@ -18,7 +21,7 @@ const DownloadLink = ({ myResume }) => {
 
   return (
     <button
-      className="btn border-dark"
+      className="btn"
       style={styleContent}
       onClick={downloadImage}
     >

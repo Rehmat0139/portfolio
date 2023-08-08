@@ -1,7 +1,11 @@
+section{
+  background-image: url(https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHdoaXRlJTIwdHJhbnNwYXJlbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+ }
+
 .home_btn {
     font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(135deg, #b3e5fc, #e6ffff);
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ccc7c7;
   }
   
   .home_btn:hover {

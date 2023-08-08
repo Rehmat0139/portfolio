@@ -12,14 +12,12 @@ import AboutBtn from "../../SubComponent/Aboutus/AboutBtn";
 
 const Home = () => {
   return (
-    <section
-      style={{ background: "linear-gradient(135deg, #b3e5fc, #e6ffff)" }}
-    >
+    <section>
       <div
         className="container-fluid home p-5 d-flex align-items-center justify-content-center"
         style={{ width: "100%", minHeight: "100vh", position: "relative" }}
       >
-        <AboutBtn/>
+        <AboutBtn />
         <Intro />
         <Resume />
         <FloatingButton />
