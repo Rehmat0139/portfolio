@@ -14,7 +14,7 @@ const DownloadLink = ({ myResume }) => {
 
   const downloadImage = () => {
     const link = document.createElement("a");
-    link.href = `/${myResume}`;
+    link.href = process.env.PUBLIC_URL + `/${myResume}`;
     link.download = myResume;
     link.click();
   };
