@@ -31,6 +31,7 @@ const Home = () => {
                 alt=""
               />
               <h1
+              id="typed-text"
                 className="myName animate__animated animate__backInDown"
                 style={{
                   fontSize: "60px",

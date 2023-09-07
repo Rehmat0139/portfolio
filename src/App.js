@@ -34,8 +34,13 @@ import TodoList from "./Component/SubComponent/Projects/Project5-DailyTodo/TodoL
 import PokemonMain from "./Component/SubComponent/Projects/Project6-Pokemon/PokemonMain";
 import Pokegame from "./Component/SubComponent/Projects/Project6-Pokemon/Pokegame";
 
+// -------------------------------Candidate-Finder-------------------------------
+import FindMain from "./Component/SubComponent/Projects/Project7-FindCandidates/FindMain";
 
-
+// --------------------------------- Web -------------------------------
+import WebComp from "./Component/SubComponent/Webs/WebComp";
+import { MainWeb1 } from "./Component/SubComponent/Webs/Web1/MainWeb1";
+import CardComp from "./Component/SubComponent/Projects/Project7-FindCandidates/CardComp";
 
 const AppContext = createContext(null);
 
@@ -139,6 +144,17 @@ function App() {
             element={<Pokegame />}
           />
           
+        {/* -----------------------------FindMains------------------------ */}
+          <Route path="/portfolio/Project/project7-Find-Candidate" element={<FindMain/>} />
+          <Route path="/portfolio/Project/project7-Find-Candidate/CardComp" element={<CardComp/>} />
+
+
+          {/* ----------------------------------- Web ------------------------------------- */}
+          <Route path="/portfolio/Project/WebComp" 
+          element={<WebComp/>} 
+          />
+
+          <Route path="/portfolio/Project/WebComp/1" element={<MainWeb1/>} />
 
         </Routes>
       </AppContext.Provider>

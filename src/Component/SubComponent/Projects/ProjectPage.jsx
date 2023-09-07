@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 const Allprojects = () => {
   const ProjArray = [
@@ -52,6 +53,14 @@ const Allprojects = () => {
       imgUrl:
         "https://images.unsplash.com/photo-1613771404721-1f92d799e49f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80",
     },
+    {
+      id: 7,
+      path: "project7-Find-Candidate",
+      text: "Find candidate",
+      caption: "Filtering Jobs with Skill Selection",
+      imgUrl:
+        "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8am9ifGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+    },
   ];
 
   const [activeProject, setActiveProject] = useState(null);
@@ -68,21 +77,21 @@ const Allprojects = () => {
     <>
       <div className="container-fluid">
         <div className="row">
+          <Link to='/portfolio/Project/WebComp'> 
+            <Button className="fixed-top d-flex justify-content-center">
+              Websites
+            </Button>
+          </Link>
+
           <div
             className="col-md-8"
             style={{
               overflowY: "scroll",
               height: "100vh",
-              backgroundImage:'url(https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHdoaXRlJTIwdHJhbnNwYXJlbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60)'
+              backgroundImage:
+                "url(https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHdoaXRlJTIwdHJhbnNwYXJlbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60)",
             }}
           >
-            {/* <Link to='/portfolio/Project/Websites'>
-              <div className="d-flex justify-content-end m-3">
-                <button style={webButtonStyle}>
-                  Webs &rarr;
-                </button>
-              </div>
-            </Link> */}
             {ProjArray.map((item) => (
               <div
                 key={item.id}
@@ -99,7 +108,10 @@ const Allprojects = () => {
               </div>
             ))}
           </div>
-          <div style={{backgroundColor:'#ccc7c7'}} className="col-md-4 text-center my-3 my-md-0 d-flex justify-content-center align-items-center">
+          <div
+            style={{ backgroundColor: "#ccc7c7" }}
+            className="col-md-4 text-center my-3 my-md-0 d-flex justify-content-center align-items-center"
+          >
             <div>
               {activeProject && (
                 <>

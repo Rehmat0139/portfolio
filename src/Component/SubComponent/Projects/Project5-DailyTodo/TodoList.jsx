@@ -12,8 +12,8 @@ const TodoList = () => {
     setWork("");
   };
 
-  const handleDelete = (workToDelete) => {
-    const updatedTask = task.filter((item) => item.work !== workToDelete);
+  const handleDelete = (i) => {
+    const updatedTask = task.filter((item) => item.work !== i);
     setTask(updatedTask);
   };
 
@@ -27,7 +27,7 @@ const TodoList = () => {
               type="text"
               value={work}
               onChange={(e) => setWork(e.target.value)}
-              placeholder="Write something"
+              placeholder="Write something . . . . "
               id=""
             />
             <button
@@ -38,7 +38,7 @@ const TodoList = () => {
               ADD
             </button>
           </form>
-          {task.map((item, index) => (
+          {task.map((item ) => (
             <Card key={item.work} work={item.work} onDelete={handleDelete} />
           ))}
         </div>
@@ -57,3 +57,4 @@ function Card ({work,onDelete}) {
         </div>
       );
 }
+
