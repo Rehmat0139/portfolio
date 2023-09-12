@@ -78,7 +78,7 @@ const Allprojects = () => {
       <div className="container-fluid">
         <div className="row">
           <Link to='/portfolio/Project/WebComp'> 
-            <Button className="fixed-top d-flex justify-content-center">
+            <Button className="fixed-top d-flex justify-content-center" style={{backgroundColor:'#444',border:'2px black'}}>
               Websites
             </Button>
           </Link>
@@ -94,6 +94,7 @@ const Allprojects = () => {
           >
             {ProjArray.map((item) => (
               <div
+              style={{marginTop:'40px'}}
                 key={item.id}
                 onMouseEnter={() => handleProjectHover(item)}
                 onMouseLeave={handleProjectLeave}
@@ -102,7 +103,7 @@ const Allprojects = () => {
                   <img
                     src={item.imgUrl}
                     alt="..."
-                    style={{ width: "80%", objectFit: "contain" }}
+                    style={{  objectFit: "contain" }}
                   />
                 </Link>
               </div>

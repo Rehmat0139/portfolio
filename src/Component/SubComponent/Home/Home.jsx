@@ -24,7 +24,7 @@ const Home = () => {
         <div style={{ position: "relative" }}></div>
         <div className="row home_img">
           <div className="col d-flex align-items-center justify-content-center">
-            <div className="d-flex flex-column align-items-center justify-content-center p-3">
+            <div className="center d-flex flex-column align-items-center justify-content-center p-3">
               <img
                 className="animate__animated animate__backInDown"
                 src={myImg}

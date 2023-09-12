@@ -40,6 +40,7 @@ import FindMain from "./Component/SubComponent/Projects/Project7-FindCandidates/
 // --------------------------------- Web -------------------------------
 import WebComp from "./Component/SubComponent/Webs/WebComp";
 import { MainWeb1 } from "./Component/SubComponent/Webs/Web1/MainWeb1";
+import MainWeb2 from "./Component/SubComponent/Webs/Web2/MainWeb2";
 import CardComp from "./Component/SubComponent/Projects/Project7-FindCandidates/CardComp";
 
 const AppContext = createContext(null);
@@ -155,6 +156,9 @@ function App() {
           />
 
           <Route path="/portfolio/Project/WebComp/1" element={<MainWeb1/>} />
+          <Route path="/portfolio/Project/WebComp/2" element={<MainWeb2/>} />
+          
+
 
         </Routes>
       </AppContext.Provider>
