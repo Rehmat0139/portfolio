@@ -4,6 +4,11 @@ import "./FloatingButton.css";
 const FloatingButton = () => {
   const socialMediaLinks = [
     {
+      name: "Certificate",
+      url: "https://www.testdome.com/certificates/aae4b0b06da94820b41308a87989660b",
+      icon: "bi bi-award fs-2",
+    },
+    {
       name: "Phone",
       url: "tel:+91-7506000139",
       icon: "bi bi-telephone",

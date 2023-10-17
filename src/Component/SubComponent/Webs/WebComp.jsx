@@ -9,7 +9,7 @@ const WebComp = () => {
       name: "E-commerce",
       imgUrl:
         "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80",
-      description: "This website is not yet completed",
+      description: "Still need to work on this",
     },
     {
       id: 2,

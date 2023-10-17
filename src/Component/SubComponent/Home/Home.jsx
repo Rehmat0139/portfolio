@@ -24,7 +24,7 @@ const Home = () => {
         <div style={{ position: "relative" }}></div>
         <div className="row home_img">
           <div className="col d-flex align-items-center justify-content-center">
-            <div className="center d-flex flex-column align-items-center justify-content-center p-3">
+            <div className="center d-flex flex-column align-items-center justify-content-center p-2">
               <img
                 className="animate__animated animate__backInDown"
                 src={myImg}
@@ -32,7 +32,7 @@ const Home = () => {
               />
               <h1
               id="typed-text"
-                className="myName animate__animated animate__backInDown"
+                className="myName animate__animated animate__backInDown text-center"
                 style={{
                   fontSize: "60px",
                   fontWeight: "700",
@@ -43,7 +43,7 @@ const Home = () => {
               </h1>
               <h3
                 className="animate__animated animate__backInDown"
-                style={{ fontWeight: "700" }}
+                style={{ fontWeight: "700", textAlign:'center' }}
               >
                 FRONT END DEVELOPER
               </h3>

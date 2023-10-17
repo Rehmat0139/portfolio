@@ -28,11 +28,11 @@
   .webcomp-card img:hover {
     max-width: 60%;
     height: auto;
-    transition: all ease-in-out 0.8s;
-    -webkit-transition: all ease-in-out 0.8s;
-    -moz-transition: all ease-in-out 0.8s;
-    -ms-transition: all ease-in-out 0.8s;
-    -o-transition: all ease-in-out 0.8s;
+    transition: all ease-out 0.8s;
+    -webkit-transition: all ease-out 0.8s;
+    -moz-transition: all ease-out 0.8s;
+    -ms-transition: all ease-out 0.8s;
+    -o-transition: all ease-out 0.8s;
 }
 
   
