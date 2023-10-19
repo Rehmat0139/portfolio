@@ -31,6 +31,8 @@ const DiceMain = () => {
                 entertainment, and a dose of randomness to your day.
               </p>
               <div className="d-flex flex-column justify-content-center align-items-center">
+              <span className="fs-3 text-warning">Click The Image 👇</span>
+         
                 <Link to="/portfolio/Project/project2-RollDice/Roll-Dice">
                   <img
                     src="https://images.unsplash.com/photo-1522069213448-443a614da9b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cm9sJTIwZGljZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"

@@ -10,7 +10,10 @@ const VendingMain = () => {
   // };
   return (
     <div className="container-fluid">
-      <div className="container d-flex justify-content-center align-items-center" style={{color:'rgb(94, 141, 141)'}}>
+      <div
+        className="container d-flex justify-content-center align-items-center"
+        style={{ color: "rgb(94, 141, 141)" }}
+      >
         <div className="row">
           <div
             style={{ height: "100vh" }}
@@ -25,8 +28,10 @@ const VendingMain = () => {
               select your beverages, and watch the magic happen as the machine
               delivers your cravings right before your eyes
             </p>
+
             <div className="d-flex flex-column justify-content-center align-items-center">
-              <Link to='/portfolio/Project/project1-VendingMachine/Vending-Machine'>
+              <span className="fs-3 text-warning">Click The Image 👇</span>
+              <Link to="/portfolio/Project/project1-VendingMachine/Vending-Machine">
                 <img
                   src="https://images.unsplash.com/photo-1519944781502-4ac8148b55e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmVuZGluZyUyMG1hY2hpbmUlMjBvZiUyMGRyaW5rfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
                   alt=""

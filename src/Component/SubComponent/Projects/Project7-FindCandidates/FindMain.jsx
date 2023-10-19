@@ -20,6 +20,8 @@ const FindMain = () => {
                 start fresh. This application simplifies job searching by
                 focusing on skills that matter most to the user.{" "}
               </p>
+              <span className="fs-3 text-warning">Click The Image 👇</span>
+         
               <Link to="/portfolio/Project/project7-Find-Candidate/CardComp">
                 <img
                   src="https://images.unsplash.com/photo-1635350736475-c8cef4b21906?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"

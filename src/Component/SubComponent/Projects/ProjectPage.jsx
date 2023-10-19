@@ -73,28 +73,79 @@ const Allprojects = () => {
     setActiveProject(null);
   };
 
+  const projCss = {
+    overflowY: "scroll",
+    height: "100vh",
+  };
+
   return (
     <>
       <div className="container-fluid">
         <div className="row">
-          <Link to='/portfolio/Project/WebComp'> 
-            <Button className="fixed-top d-flex justify-content-center" style={{backgroundColor:'#444',border:'2px black'}}>
-              Websites
+          <Link to="/portfolio/Project/WebComp">
+            <Button
+              className="fixed-top d-flex justify-content-center align-items-center fs-3 fw-bold"
+              style={{
+                backgroundColor: "#444",
+                fontFamily: "Brush Script MT",
+                border: "2px #B3A492",
+                height: "50px",
+                color:'#D0D4CA'
+              }}
+            >
+              See The Website I Made Here
             </Button>
           </Link>
 
-          <div
-            className="col-md-8"
-            style={{
-              overflowY: "scroll",
-              height: "100vh",
-              backgroundImage:
-                "url(https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHdoaXRlJTIwdHJhbnNwYXJlbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60)",
-            }}
-          >
+          <div className="col-md-8" style={projCss}>
+            <style>
+              {`
+          @keyframes slidein {
+            from {background-position: top; background-size:3000px; }
+            to {background-position: -100px 0px;background-size:2750px;}
+          }
+
+          body {
+            background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+            background-size: cover;
+            -webkit-animation: slidein 100s;
+            animation: slidein 100s;
+
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+          }
+
+          .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(75, 75, 250, 0.3);
+            border-radius: 3px;
+          }
+
+          .center h1 {
+            text-align: center;
+            color: white;
+            font-family: 'Source Code Pro', monospace;
+            text-transform: uppercase;
+          }
+        `}
+            </style>{" "}
             {ProjArray.map((item) => (
               <div
-              style={{marginTop:'40px'}}
+                style={{ marginTop: "40px" }}
                 key={item.id}
                 onMouseEnter={() => handleProjectHover(item)}
                 onMouseLeave={handleProjectLeave}
@@ -103,23 +154,21 @@ const Allprojects = () => {
                   <img
                     src={item.imgUrl}
                     alt="..."
-                    style={{  objectFit: "contain" }}
+                    style={{ objectFit: "contain" }}
                   />
                 </Link>
               </div>
             ))}
           </div>
-          <div
-            style={{ backgroundColor: "#ccc7c7" }}
-            className="col-md-4 text-center my-3 my-md-0 d-flex justify-content-center align-items-center"
-          >
+          <div className="col-md-4 text-center my-3 my-md-0 d-flex justify-content-center align-items-center">
             <div>
-              {activeProject && (
+              {activeProject ? (
                 <>
                   <p
                     style={{
                       fontWeight: "600",
-                      fontFamily: "sans-serif",
+                      fontFamily: "Brush Script MT",
+
                       fontSize: "50px",
                     }}
                   >
@@ -128,13 +177,17 @@ const Allprojects = () => {
                   <p
                     style={{
                       fontWeight: "500",
-                      fontFamily: "sans-serif",
+                      fontFamily: "Brush Script MT",
                       fontSize: "20px",
                     }}
                   >
                     {activeProject.caption}
                   </p>
                 </>
+              ) : (
+                <h2 style={{ fontFamily: "Brush Script MT" }}>
+                  Point the cursor on the image and click on it
+                </h2>
               )}
             </div>
           </div>

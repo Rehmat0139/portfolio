@@ -15,6 +15,8 @@ const CoinMain = () => {
               coin toss and let the user guess the outcome - either "Heads" or
               "Tails."
             </p>
+            <span className="fs-3 text-warning">Click The Image 👇</span>
+         
             <Link to='/portfolio/Project/project4-CoinFlip/Flip-Coin'>
               <img
                 src="https://images.unsplash.com/photo-1587403335644-fa8fef06b261?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80"
